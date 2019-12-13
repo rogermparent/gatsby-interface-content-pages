@@ -1,0 +1,19 @@
+{
+  "name": "gatsby-interface-content-pages",
+  "version": "1.0.0",
+  "description": "A Gatsby plugin that defines an interface for pages and provides page creation functionality to use it.",
+  "main": "gatsby-node.js",
+  "author": "rmp",
+  "scripts": {
+    "format": "prettier --write **/*.js",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "license": "MIT"
+}
