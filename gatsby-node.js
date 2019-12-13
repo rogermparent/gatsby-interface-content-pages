@@ -17,7 +17,6 @@ exports.createPages = async (
   const { createPage } = actions;
   const {
     createPages = true,
-    basePath = "/",
     templateDir = "src/templates",
     defaultTemplate = "default"
   } = themeOptions;
