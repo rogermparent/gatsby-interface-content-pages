@@ -2,7 +2,7 @@
   "name": "gatsby-interface-content-pages",
   "version": "1.0.0",
   "description": "A Gatsby plugin that defines an interface for pages and provides page creation functionality to use it.",
-  "main": "gatsby-node.js",
+  "main": "index.js",
   "author": "rmp",
   "scripts": {
     "format": "prettier --write **/*.js",
