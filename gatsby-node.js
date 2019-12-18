@@ -1,22 +1,16 @@
 const path = require("path");
-
-const {
-  contentPageInterfaceName,
-  buildContentPageType
-} = require("./type-definitions");
+const typeDefinition = require("./index");
 
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
 
   const types = [
-    schema.buildInterfaceType(
-      buildContentPageType({
-        name: contentPageInterfaceName,
-        extensions: {
-          nodeInterface: {}
-        }
-      })
-    )
+    schema.buildInterfaceType({
+      ...typeDefinition,
+      extensions: {
+        nodeInterface: {}
+      }
+    })
   ];
 
   createTypes(types);
